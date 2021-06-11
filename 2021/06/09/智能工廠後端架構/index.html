@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"fjwangg.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="micropyton開發">
+  <meta name="description" content="通訊協定登入後 -&gt; server送 reqpack.type &#x3D; DataPack.TYPE_DEBUG; reqpack.cmd &#x3D; DataPack.CMD_REQUEST_INFO;  如果client有回訊息，就會正式登入到onClient的部份; 資料收集資料上傳TestStation的資料保存Listener – 資料上傳的方法由上層產生方法再由下層來call就叫listene">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2021&#x2F;06&#x2F;05日記">
-<meta property="og:url" content="https://fjwangg.github.io/2021/06/05/2021-06-05%E6%97%A5%E8%A8%98/index.html">
+<meta property="og:title" content="智能工廠後端架構">
+<meta property="og:url" content="https://fjwangg.github.io/2021/06/09/%E6%99%BA%E8%83%BD%E5%B7%A5%E5%BB%A0%E5%BE%8C%E7%AB%AF%E6%9E%B6%E6%A7%8B/index.html">
 <meta property="og:site_name" content="風人記事2021">
-<meta property="og:description" content="micropyton開發">
+<meta property="og:description" content="通訊協定登入後 -&gt; server送 reqpack.type &#x3D; DataPack.TYPE_DEBUG; reqpack.cmd &#x3D; DataPack.CMD_REQUEST_INFO;  如果client有回訊息，就會正式登入到onClient的部份; 資料收集資料上傳TestStation的資料保存Listener – 資料上傳的方法由上層產生方法再由下層來call就叫listene">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2021-06-05T07:52:38.000Z">
-<meta property="article:modified_time" content="2021-06-05T07:56:50.784Z">
+<meta property="article:published_time" content="2021-06-09T09:29:57.000Z">
+<meta property="article:modified_time" content="2021-06-10T06:33:50.063Z">
 <meta property="article:author" content="風人">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://fjwangg.github.io/2021/06/05/2021-06-05%E6%97%A5%E8%A8%98/">
+<link rel="canonical" href="https://fjwangg.github.io/2021/06/09/%E6%99%BA%E8%83%BD%E5%B7%A5%E5%BB%A0%E5%BE%8C%E7%AB%AF%E6%9E%B6%E6%A7%8B/">
 
 
 <script id="page-configurations">
@@ -45,7 +46,7 @@
   };
 </script>
 
-  <title>2021/06/05日記 | 風人記事2021</title>
+  <title>智能工廠後端架構 | 風人記事2021</title>
   
 
 
@@ -150,7 +151,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://fjwangg.github.io/2021/06/05/2021-06-05%E6%97%A5%E8%A8%98/">
+    <link itemprop="mainEntityOfPage" href="https://fjwangg.github.io/2021/06/09/%E6%99%BA%E8%83%BD%E5%B7%A5%E5%BB%A0%E5%BE%8C%E7%AB%AF%E6%9E%B6%E6%A7%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/familyP.jpeg">
@@ -163,7 +164,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          2021/06/05日記
+          智能工廠後端架構
         </h1>
 
         <div class="post-meta">
@@ -172,17 +173,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2021-06-05 15:52:38 / 修改時間：15:56:50" itemprop="dateCreated datePublished" datetime="2021-06-05T15:52:38+08:00">2021-06-05</time>
+              <time title="創建時間：2021-06-09 17:29:57" itemprop="dateCreated datePublished" datetime="2021-06-09T17:29:57+08:00">2021-06-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2021-06-10 14:33:50" itemprop="dateModified" datetime="2021-06-10T14:33:50+08:00">2021-06-10</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%97%A5%E8%A8%98/" itemprop="url" rel="index"><span itemprop="name">日記</span></a>
+                  <a href="/categories/%E6%99%BA%E8%83%BD%E5%B7%A5%E5%BB%A0/" itemprop="url" rel="index"><span itemprop="name">智能工廠</span></a>
                 </span>
             </span>
 
@@ -197,7 +204,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="micropyton開發"><a href="#micropyton開發" class="headerlink" title="micropyton開發"></a>micropyton開發</h2>
+        <h2 id="通訊協定"><a href="#通訊協定" class="headerlink" title="通訊協定"></a>通訊協定</h2><p>登入後 -&gt; server送</p>
+<pre><code>reqpack.type = DataPack.TYPE_DEBUG;
+reqpack.cmd = DataPack.CMD_REQUEST_INFO;
+</code></pre>
+<p>如果client有回訊息，就會正式登入到onClient的部份;</p>
+<h2 id="資料收集"><a href="#資料收集" class="headerlink" title="資料收集"></a>資料收集</h2><h2 id="資料上傳"><a href="#資料上傳" class="headerlink" title="資料上傳"></a>資料上傳</h2><h2 id="TestStation的資料保存"><a href="#TestStation的資料保存" class="headerlink" title="TestStation的資料保存"></a>TestStation的資料保存</h2><h3 id="Listener-–-資料上傳的方法"><a href="#Listener-–-資料上傳的方法" class="headerlink" title="Listener – 資料上傳的方法"></a>Listener – 資料上傳的方法</h3><p>由上層產生方法再由下層來call就叫listener，由這樣產生資料上傳的機制</p>
+<p>BHClientSocketListener – 最底層上傳資料到NetServer層</p>
+<pre><code>onConnected(BHClientSocket sock)
+onDisconnected(BHClientSocket sock)
+onRawData(BHClientSocket sock, String data)
+//onPacket(BHClientSocket sock, DataPack packet)
+</code></pre>
+<p>NetServerListener – 最Server層上傳資料到SignalHole層</p>
+<pre><code>onClientMessage(ClientInfo info, String data)
+onClientOnline(ClientInfo info)
+onClientOutline(ClientInfo info)
+</code></pre>
+<h3 id="SignalHole-–-存儲暫時機台資料"><a href="#SignalHole-–-存儲暫時機台資料" class="headerlink" title="SignalHole – 存儲暫時機台資料"></a>SignalHole – 存儲暫時機台資料</h3><p>Map&lt;String, ClientStatus&gt; appStatus = new Hashtable&lt;&gt;();<br>==&gt; 機台暫時資料<br>MultiTask mTask = null;<br>==&gt; 流程運作<br>MessageQueue<SignalInfo> msgQ = new MessageQueue<SignalInfo>();<br>SignalHandler<SignalInfo> sigHandler = new SignalHandler<SignalInfo>();<br>DataChartManager dataChartManager;<br>NettySocketIOServer nsioServer;<br>==&gt; webSocket</p>
+<h3 id="手法"><a href="#手法" class="headerlink" title="手法"></a>手法</h3><p>pooling一次，再把隨時改變的資料送到react上，然後由react來計算</p>
+
     </div>
 
     
@@ -205,6 +231,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"># Java</a>
+          </div>
 
         
 
@@ -215,7 +244,10 @@
     <a href="/2021/06/05/MicroPython-%E8%A8%AD%E5%AE%9A/" rel="prev" title="MicroPython 設定">
       <i class="fa fa-chevron-left"></i> MicroPython 設定
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2021/06/10/2021-06%E6%9C%88%E6%97%A5%E8%A8%98/" rel="next" title="2021/06月日記">
+      2021/06月日記 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -274,7 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#micropyton%E9%96%8B%E7%99%BC"><span class="nav-number">1.</span> <span class="nav-text">micropyton開發</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%A8%8A%E5%8D%94%E5%AE%9A"><span class="nav-number">1.</span> <span class="nav-text">通訊協定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E6%94%B6%E9%9B%86"><span class="nav-number">2.</span> <span class="nav-text">資料收集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E4%B8%8A%E5%82%B3"><span class="nav-number">3.</span> <span class="nav-text">資料上傳</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TestStation%E7%9A%84%E8%B3%87%E6%96%99%E4%BF%9D%E5%AD%98"><span class="nav-number">4.</span> <span class="nav-text">TestStation的資料保存</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Listener-%E2%80%93-%E8%B3%87%E6%96%99%E4%B8%8A%E5%82%B3%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-number">4.1.</span> <span class="nav-text">Listener – 資料上傳的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SignalHole-%E2%80%93-%E5%AD%98%E5%84%B2%E6%9A%AB%E6%99%82%E6%A9%9F%E5%8F%B0%E8%B3%87%E6%96%99"><span class="nav-number">4.2.</span> <span class="nav-text">SignalHole – 存儲暫時機台資料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%8B%E6%B3%95"><span class="nav-number">4.3.</span> <span class="nav-text">手法</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -290,7 +322,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -301,7 +333,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>

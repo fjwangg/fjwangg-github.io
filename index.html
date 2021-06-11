@@ -147,7 +147,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://fjwangg.github.io/2021/06/05/2021-06-05%E6%97%A5%E8%A8%98/">
+    <link itemprop="mainEntityOfPage" href="https://fjwangg.github.io/2021/06/10/2021-06%E6%9C%88%E6%97%A5%E8%A8%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/familyP.jpeg">
@@ -161,7 +161,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/05/2021-06-05%E6%97%A5%E8%A8%98/" class="post-title-link" itemprop="url">2021/06/05日記</a>
+            <a href="/2021/06/10/2021-06%E6%9C%88%E6%97%A5%E8%A8%98/" class="post-title-link" itemprop="url">2021/06月日記</a>
         </h2>
 
         <div class="post-meta">
@@ -170,10 +170,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2021-06-05 15:52:38 / 修改時間：15:56:50" itemprop="dateCreated datePublished" datetime="2021-06-05T15:52:38+08:00">2021-06-05</time>
+              <time title="創建時間：2021-06-10 07:10:46" itemprop="dateCreated datePublished" datetime="2021-06-10T07:10:46+08:00">2021-06-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2021-06-11 13:13:02" itemprop="dateModified" datetime="2021-06-11T13:13:02+08:00">2021-06-11</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -195,7 +201,103 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="micropyton開發"><a href="#micropyton開發" class="headerlink" title="micropyton開發"></a>micropyton開發</h2>
+          <h3 id="2021-06-11日記"><a href="#2021-06-11日記" class="headerlink" title="2021-06-11日記"></a>2021-06-11日記</h3><p>2021-06-11 10:21:01<br>1。先做出新的訊號集中註冊與發射到websocket中<br>2。react決定是否要處理這些新訊號</p>
+<h3 id="2021-06-10日記"><a href="#2021-06-10日記" class="headerlink" title="2021-06-10日記"></a>2021-06-10日記</h3><p>2021-06-10 20:01:55<br>上傳資料到api成功了，但show到ui先不要，下一步送signal資料，帶目前的測試項與結果，這是要show在即時的狀態上用的</p>
+<p>2021-06-10 14:58:51<br>訂下一個目標，由uPy送testItemList -&gt; server @debugType =&gt;<br>隨時送目前的test item to server =&gt; show出來在ui</p>
+<p>2021-06-10 07:12:22<br>micropython一次登入多次，要找一下原因<br>出現在time request中， =&gt; 先把time request關掉 =&gt;<br>=&gt; 剩下heartbeat還是會關tcp socket，轉查一下server端<br>=&gt; NetServer2  sock same, sn:sn???，原因就是名字相同<br>=&gt; 下一個先把server資料清掉，再試<br>=&gt;&gt;&gt; 大決定，不要用nio了，不熟！改回正常的socket</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://fjwangg.github.io/2021/06/09/%E6%99%BA%E8%83%BD%E5%B7%A5%E5%BB%A0%E5%BE%8C%E7%AB%AF%E6%9E%B6%E6%A7%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/familyP.jpeg">
+      <meta itemprop="name" content="風人">
+      <meta itemprop="description" content="記點軟體工作者的事宜">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="風人記事2021">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/09/%E6%99%BA%E8%83%BD%E5%B7%A5%E5%BB%A0%E5%BE%8C%E7%AB%AF%E6%9E%B6%E6%A7%8B/" class="post-title-link" itemprop="url">智能工廠後端架構</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2021-06-09 17:29:57" itemprop="dateCreated datePublished" datetime="2021-06-09T17:29:57+08:00">2021-06-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2021-06-10 14:33:50" itemprop="dateModified" datetime="2021-06-10T14:33:50+08:00">2021-06-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%99%BA%E8%83%BD%E5%B7%A5%E5%BB%A0/" itemprop="url" rel="index"><span itemprop="name">智能工廠</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="通訊協定"><a href="#通訊協定" class="headerlink" title="通訊協定"></a>通訊協定</h2><p>登入後 -&gt; server送</p>
+<pre><code>reqpack.type = DataPack.TYPE_DEBUG;
+reqpack.cmd = DataPack.CMD_REQUEST_INFO;
+</code></pre>
+<p>如果client有回訊息，就會正式登入到onClient的部份;</p>
+<h2 id="資料收集"><a href="#資料收集" class="headerlink" title="資料收集"></a>資料收集</h2><h2 id="資料上傳"><a href="#資料上傳" class="headerlink" title="資料上傳"></a>資料上傳</h2><h2 id="TestStation的資料保存"><a href="#TestStation的資料保存" class="headerlink" title="TestStation的資料保存"></a>TestStation的資料保存</h2><h3 id="Listener-–-資料上傳的方法"><a href="#Listener-–-資料上傳的方法" class="headerlink" title="Listener – 資料上傳的方法"></a>Listener – 資料上傳的方法</h3><p>由上層產生方法再由下層來call就叫listener，由這樣產生資料上傳的機制</p>
+<p>BHClientSocketListener – 最底層上傳資料到NetServer層</p>
+<pre><code>onConnected(BHClientSocket sock)
+onDisconnected(BHClientSocket sock)
+onRawData(BHClientSocket sock, String data)
+//onPacket(BHClientSocket sock, DataPack packet)
+</code></pre>
+<p>NetServerListener – 最Server層上傳資料到SignalHole層</p>
+<pre><code>onClientMessage(ClientInfo info, String data)
+onClientOnline(ClientInfo info)
+onClientOutline(ClientInfo info)
+</code></pre>
+<h3 id="SignalHole-–-存儲暫時機台資料"><a href="#SignalHole-–-存儲暫時機台資料" class="headerlink" title="SignalHole – 存儲暫時機台資料"></a>SignalHole – 存儲暫時機台資料</h3><p>Map&lt;String, ClientStatus&gt; appStatus = new Hashtable&lt;&gt;();<br>==&gt; 機台暫時資料<br>MultiTask mTask = null;<br>==&gt; 流程運作<br>MessageQueue<SignalInfo> msgQ = new MessageQueue<SignalInfo>();<br>SignalHandler<SignalInfo> sigHandler = new SignalHandler<SignalInfo>();<br>DataChartManager dataChartManager;<br>NettySocketIOServer nsioServer;<br>==&gt; webSocket</p>
+<h3 id="手法"><a href="#手法" class="headerlink" title="手法"></a>手法</h3><p>pooling一次，再把隨時改變的資料送到react上，然後由react來計算</p>
+
       
     </div>
 
@@ -318,9 +420,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2021-06-05 15:02:25 / 修改時間：15:02:45" itemprop="dateCreated datePublished" datetime="2021-06-05T15:02:25+08:00">2021-06-05</time>
+              <time title="創建時間：2021-06-05 15:02:25" itemprop="dateCreated datePublished" datetime="2021-06-05T15:02:25+08:00">2021-06-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2021-06-09 17:31:22" itemprop="dateModified" datetime="2021-06-09T17:31:22+08:00">2021-06-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%99%BA%E8%83%BD%E5%B7%A5%E5%BB%A0/" itemprop="url" rel="index"><span itemprop="name">智能工廠</span></a>
+                </span>
             </span>
 
           
@@ -334,7 +451,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><p>建立fct測試站 -&gt; 介紹系統 -&gt; 建立performance測試站 -&gt; 幫客人解決問題</p>
+<h3 id="系統"><a href="#系統" class="headerlink" title="系統"></a>系統</h3><p>首頁：多測試站螢幕<br>即時測站內容</p>
+<h3 id="目前進度"><a href="#目前進度" class="headerlink" title="目前進度"></a>目前進度</h3><p>2021-06-08 10:48:41<br>uPy-&gt; send testing item -&gt; bg -&gt;(websocket)-&gt; fend (pannel)</p>
+<h3 id="mPy-send-testing-message"><a href="#mPy-send-testing-message" class="headerlink" title="mPy send testing message"></a>mPy send testing message</h3><p>path: /Users/fj-wang/Documents/00_客户资料/07_研騰Pronology/02_Peloton/06_PrepareSystem/02_upy_v15/micropython/tools/MicroST</p>
+
       
     </div>
 
@@ -831,67 +952,7 @@
 
       
           <h2 id="問題點思考"><a href="#問題點思考" class="headerlink" title="問題點思考"></a>問題點思考</h2><p>功能：<br>    1. 自動產生報告與mail<br>    2. 報告目前是採用wordTag的資料庫，就是用word裏的tag key來找尋相對應的字<br>    3. 找出要發mail的人的方式<br>    4. 條件有 物件、人員、公司，另一個想法是任務，由任務找人員與物件，再把mail送出來<br>    5. 就一張tables,叫jobTable,有欄位id、jobFunction、jobContent、timeRegister、regPerson</p>
-<p>+—-+———-+————-+——————-+———————+———–+<br>| id | jobName  | jobFunction | jobContent        | timeRegister        | regPerson |<br>+—-+———-+————-+——————-+———————+———–+<br>|  2 | mailH001 | sendTo      | <a href="mailto:&#102;&#106;&#x77;&#97;&#110;&#103;&#x67;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;">&#102;&#106;&#x77;&#97;&#110;&#103;&#x67;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;</a> | 2019-12-21 22:53:26 |           |<br>+—-+———-+————-+——————-+———————+———–+<br>       1. jobFunction中有人員、</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://fjwangg.github.io/2019/12/20/Maven%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8A/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/familyP.jpeg">
-      <meta itemprop="name" content="風人">
-      <meta itemprop="description" content="記點軟體工作者的事宜">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="風人記事2021">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/20/Maven%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8A/" class="post-title-link" itemprop="url">Maven操作手冊</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-              
-
-              <time title="創建時間：2019-12-20 16:07:02 / 修改時間：16:56:05" itemprop="dateCreated datePublished" datetime="2019-12-20T16:07:02+08:00">2019-12-20</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="產生新計劃-Project"><a href="#產生新計劃-Project" class="headerlink" title="產生新計劃 Project"></a>產生新計劃 Project</h2><p>指令： mvn archetype:generate<br>Define value for property ‘groupId’: LightCarp<br>Define value for property ‘artifactId’: LightCarp.Email<br>Define value for property ‘version’ 1.0-SNAPSHOT: : 1.0.0<br>Define value for property ‘package’ LightCarp: : jar</p>
-<h2 id="Maven-Module找尋"><a href="#Maven-Module找尋" class="headerlink" title="Maven Module找尋"></a>Maven Module找尋</h2><p>到~/.m2/repository/ 中查是否有別人安裝同名稱的module，再加以排除</p>
+<p>+—-+———-+————-+——————-+———————+———–+<br>| id | jobName  | jobFunction | jobContent        | timeRegister        | regPerson |<br>+—-+———-+————-+——————-+———————+———–+<br>|  2 | mailH001 | sendTo      | <a href="mailto:&#102;&#x6a;&#x77;&#x61;&#x6e;&#103;&#x67;&#x40;&#103;&#109;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#109;">&#102;&#x6a;&#x77;&#x61;&#x6e;&#103;&#x67;&#x40;&#103;&#109;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#109;</a> | 2019-12-21 22:53:26 |           |<br>+—-+———-+————-+——————-+———————+———–+<br>       1. jobFunction中有人員、</p>
 
       
     </div>
@@ -978,7 +1039,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -989,7 +1050,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
